@@ -9,3 +9,5 @@ Libraries:
 TensorFlow 2.1
 Numpy
 Gym
+
+这玩意好像不收敛.....
