@@ -7,6 +7,8 @@ Here I will build a Deep QNet from scratch which combines deep learning with Q l
 
 Typical reward curve for **naive** deep reinforcement learning: unlike supervised learning, it hardly converges and is really noisy, unless the very good hyperparameters are chosen. However, you can see the demo video of the cartpole after 1000 iterations of my code, which is pretty nutty.
 
+![alt demo](demo/Demo.gif)
+
 Here is what the reward curve looks like for 2000 iterations. This one is the best result after I run the program 6 times:
 ![alt reward](data/dqn.png)
 
