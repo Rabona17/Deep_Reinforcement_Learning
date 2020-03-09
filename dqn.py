@@ -14,4 +14,3 @@ class dqn(keras.Model):
         out = self.layer2(out)
         out = self.layer3(out)
         return out
-
