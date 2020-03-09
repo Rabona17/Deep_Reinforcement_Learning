@@ -12,4 +12,4 @@ TensorFlow 2.1, Numpy, Gym
 Typical reward curve for deep reinforcement learning: It never converges and is really noisy. However, you can see the demo video of the cartpole after 1000 iterations of my code, which is pretty nutty.
 
 Here is what the reward curve looks like for 2000 iterations. This one is the best result after I run the program 6 times:
-![alt reward](dqn.png)
+![alt reward](data/dqn.png)
