@@ -2,7 +2,7 @@ import  numpy as np
 import  tensorflow as tf
 from    tensorflow import keras
 from    tensorflow.keras import layers,optimizers,losses
-
+import random
 def epi_greedy(epi, s, dqn, a_len):
     s = tf.constant(s.reshape([1,-1]),tf.float32)
     out = dqn(s)[0].numpy().argmax()
