@@ -1,4 +1,4 @@
-# Deep_Reinforcement_Learning
+# Deep Reinforcement Learning with DQN algorithm
 Final project for CSE150A:Intro to AI:Probabilistic Reasoning. 
 
 Here I will build a Deep QNet from scratch which combines deep learning with Q learning using TF2.0. My goal is to fit the QNet to play several games on OpenAI's Gym.
