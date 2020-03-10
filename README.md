@@ -26,4 +26,4 @@ Here is what the reward curve looks like for 2000 iterations for the CartPole ga
 However, as dqn is getting improved again and again by researchers, and more and more advanced dqn (double dqn, dueling dqn, etc) are coming out, my agent may not be the strongest. But during this project, I have learned why and how people came up with deep reinforcement learning, and have gained experience in writing TF and debugging.
 
 ## Reference
-
+- I came up with the architecture of the project, and I learned it from these blogs
