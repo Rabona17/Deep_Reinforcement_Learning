@@ -11,6 +11,8 @@ For this project, I build a Deep QNet(# of states -> 64(Relu) -> 32(Relu) -> # o
 The blue part is represented by target network, and black part by evaluation network. Note that **We are only training the evaluation network**, and the target network only serves as a reference when we compute the loss. Also, we need to update the 
 target network by setting them equal to the training network after a certain time step to improve the loss function.
 
+Also, I borrowed idea from [here](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym) which revised the reward when training to make the goal of the agent clearer: For CartPole, the reward is now the inverse of largest angel between the stick and the base, and we want to maximize it; for MountainCar, the reward is now the height of the car that we want to optimize.
+
 ## Assessment
 Typical reward curve for **naive** deep reinforcement learning, unlike supervised learning, can be hard to converge and is really noisy, unless the very good hyperparameters are chosen. For this project, given time constrained(8 hours per person), I didn't spend a lot of time tuning the hyperparameters. However, the cartpole and mountaincar game of my network seems pretty decent after some training. Also, since the dqn.py and utils.py and be shared between different games, the user only need to modify the main function.
 
@@ -26,4 +28,10 @@ Here is what the reward curve looks like for 2000 iterations for the CartPole ga
 However, as dqn is getting improved again and again by researchers, and more and more advanced dqn (double dqn, dueling dqn, etc) are coming out, my agent may not be the strongest. But during this project, I have learned why and how people came up with deep reinforcement learning, and have gained experience in writing TF and debugging.
 
 ## Reference
-- I came up with the architecture of the project, and I learned it from these blogs
+I came up with the architecture and the details of the project, and I wrote all the codes myself. during the process, I learned from these blogs:
+- https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym
+- https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book/tree/master/ch14
+- https://datascience.stackexchange.com/questions/20535/what-is-experience-replay-and-what-are-its-benefits
+- https://medium.com/@jonathan_hui/rl-dqn-deep-q-network-e207751f7ae4
+- https://github.com/pylSER/Deep-Reinforcement-learning-Mountain-Car/blob/master/MountainCarV2.py
+
