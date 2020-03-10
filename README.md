@@ -15,6 +15,7 @@ target network by setting them equal to the training network after a certain tim
 Typical reward curve for **naive** deep reinforcement learning, unlike supervised learning, can be hard to converge and is really noisy, unless the very good hyperparameters are chosen. For this project, given time constrained(8 hours per person), I didn't spend a lot of time tuning the hyperparameters. However, the cartpole and mountaincar game of my network seems pretty decent after some training. Also, since the dqn.py and utils.py and be shared between different games, the user only need to modify the main function.
 
 ![alt demo](demo/Demo.gif)
+![alt demo](demo/MountainCar.gif)
 
 Here is the reward curve of a random 2000 iterations of mountain car
 ![alt reward](demo/MountainCar.png)
