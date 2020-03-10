@@ -14,6 +14,8 @@ target network by setting them equal to the training network after a certain tim
 Also, I borrowed idea from [here](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/tree/master/contents/6_OpenAI_gym) which revised the reward when training to make the goal of the agent clearer: For CartPole, the reward is now the inverse of largest angel between the stick and the base, and we want to maximize it; for MountainCar, the reward is now the height of the car that we want to optimize.
 
 ## Assessment
+**What's good**
+
 Typical reward curve for **naive** deep reinforcement learning, unlike supervised learning, can be hard to converge and is really noisy, unless the very good hyperparameters are chosen. For this project, given time constrained(8 hours per person), I didn't spend a lot of time tuning the hyperparameters. However, the cartpole and mountaincar game of my network seems pretty decent after some training. Also, since the dqn.py and utils.py and be shared between different games, the user only need to modify the main function.
 
 ![alt demo](demo/Demo.gif)
@@ -24,8 +26,9 @@ Here is the reward curve of a random 2000 iterations of mountain car
 
 Here is what the reward curve looks like for 2000 iterations for the CartPole game. This one is the best result after I run the program 3 times:
 ![alt reward](data/dqn.png)
+**What's bad**
 
-However, as dqn is getting improved again and again by researchers, and more and more advanced dqn (double dqn, dueling dqn, etc) are coming out, my agent may not be the strongest. But during this project, I have learned why and how people came up with deep reinforcement learning, and have gained experience in writing TF and debugging.
+For a game like mountain car or cartpole, it maybe overkilling and unefficiency to use dqn. In fact, a simple q learning will converge faster and can lead to better result. Also, as dqn is getting improved again and again by researchers, and more and more advanced dqn (double dqn, dueling dqn, etc) are coming out, my agent may not be the strongest. But during this project, I have learned why and how people came up with deep reinforcement learning, and have gained experience in writing TF and debugging.
 
 ## Reference
 I came up with the architecture and the details of the project, and I wrote all the codes myself. during the process, I learned from these blogs:
